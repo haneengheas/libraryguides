@@ -9,7 +9,7 @@ import 'package:libraryguides/widgets/button/textbuton.dart';
 import 'package:libraryguides/widgets/input_field_regeist.dart';
 
 class LogInScreen extends StatefulWidget {
-  final void Function (String email, String password, BuildContext context,) submitAuth;
+  final void Function (String email, String password, BuildContext context, bool isLogin) submitAuth;
 
   LogInScreen(this.submitAuth);
 
@@ -48,7 +48,7 @@ class _LogInScreenState extends State<LogInScreen> {
     print('aa');
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
-      widget.submitAuth(email.trim(),password.trim(),context);
+      widget.submitAuth(email.trim(),password.trim(),context, isLogin);
 
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => NavigationScreen()));
