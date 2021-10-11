@@ -44,7 +44,7 @@ late String name;
               child: Column(
             children: [
               InputFieldRegist(
-                onSaved: (){},
+                onSaved: null,
                 hint: 'ادخل كلمةالمرورالقديم',
                 label: 'كلمة المرور القديم',
                 scure: false,
@@ -61,7 +61,7 @@ late String name;
                 height: 20,
               ),
               InputFieldRegist(
-                onSaved: (){},
+                onSaved: null,
 
                 hint: 'ادخل كلمة المرور الجديد',
                 label: 'كلمة المرور الجديد',
@@ -78,7 +78,7 @@ late String name;
                 height: 20,
               ),
               InputFieldRegist(
-                onSaved: (){},
+                onSaved: null,
       
                 hint: ' تاكيد كلمة المرورالجديد',
                 label: ' تاكيد كلمة المرورالجديد',

@@ -79,7 +79,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   //   }, onSaved: (){},
                   // ),
                   InputFieldRegist(
-                    onSaved: (){},
+                    onSaved: null,
                     hint: "ادخل البريد الالكتروني",
                     label: "البريد الالكتروني ",
                     scure: false,
@@ -93,7 +93,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     },
                   ),
                   InputFieldRegist(
-                    onSaved: (){},
+                    onSaved: null,
                     hint: "ادخل كلمة مرور",
                     label: "كلمة المرور ",
                     scure: true,

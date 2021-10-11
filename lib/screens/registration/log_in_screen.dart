@@ -96,12 +96,12 @@ class _LogInScreenState extends State<LogInScreen> {
                   email = value;
                   if (value!.isEmpty) {
                     return 'برجاء كتابه البريد الالكتروني بشكل صحيح';
-                  } else if (value.toString().contains('@')) {
+                  } else if (!value.toString().contains('@')) {
                     return 'يجب ان يحتوي البريد الالكتروني علي @';
                   }
                 },
                 onSaved: (value) {
-                  email = value;
+                  email = value!;
                 },
               ),
               InputFieldRegist(
@@ -117,7 +117,7 @@ class _LogInScreenState extends State<LogInScreen> {
                   }
                 },
                 onSaved: (value) {
-                  password = value;
+                  password = value!;
                 },
               ),
             ],

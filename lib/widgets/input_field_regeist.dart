@@ -6,7 +6,7 @@ class InputFieldRegist extends StatefulWidget {
   final String label;
   final bool scure;
   final FormFieldValidator validator;
-  final Function onSaved;
+  final Function(String?)? onSaved;
 
   InputFieldRegist(
       {required this.hint,
@@ -30,7 +30,7 @@ class _InputFieldRegistState extends State<InputFieldRegist> {
         child: TextFormField(
           obscureText: widget.scure,
           validator: widget.validator,
-          onSaved: widget.onSaved(),
+          onSaved: widget.onSaved,
           decoration: InputDecoration(
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: purple, width: 2.5),
