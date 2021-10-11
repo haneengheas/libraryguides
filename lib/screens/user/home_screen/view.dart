@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:library_guide/constant/styles.dart';
-import 'package:library_guide/screens/user/home_screen/books_box.dart';
-import 'package:library_guide/widgets/logo.dart';
+import 'package:libraryguides/constant/styles.dart';
+import 'package:libraryguides/widgets/logo.dart';
+
+import 'books_box.dart';
 
 class HomePageScren extends StatelessWidget {
   const HomePageScren({Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:library_guide/constant/styles.dart';
-import 'package:library_guide/screens/admin/book_details/view.dart';
+import 'package:libraryguides/constant/styles.dart';
+import 'package:libraryguides/screens/admin/book_details/view.dart';
 
 class BooksBox extends StatelessWidget {
 // الكلاس ده عبارة عن البوكس اللي هيكون فيه الكتاب مع اسمه من تحت ..وهنستدعيها في ال rowbooks

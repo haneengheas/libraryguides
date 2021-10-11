@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "598653023756",
+    "project_id": "library-guides",
+    "storage_bucket": "library-guides.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598653023756:android:b1b7f03541d9a84c3ae029",
+        "android_client_info": {
+          "package_name": "com.library.library"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598653023756-ufnuaji6ogvq7beo0c1n95sbu38hpvmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtPIGGjtxxZQFqVZDKKn_iJCwQ39N1PWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598653023756-ufnuaji6ogvq7beo0c1n95sbu38hpvmt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

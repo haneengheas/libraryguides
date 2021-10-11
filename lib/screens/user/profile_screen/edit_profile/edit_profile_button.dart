@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:library_guide/constant/styles.dart';
+import 'package:libraryguides/constant/styles.dart';
 
 class EditButton extends StatelessWidget {
   final String text;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:library_guide/screens/user/search_screen/input_search.dart';
+import 'input_search.dart';
 
 class SearchScreen extends StatefulWidget {
    final TextEditingController searchController = TextEditingController();

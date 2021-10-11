@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:library_guide/constant/styles.dart';
-import 'package:library_guide/screens/user/profile_screen/edit_profile/view.dart';
-import 'package:library_guide/screens/user/profile_screen/edit_profile/edit_profile_button.dart';
-import 'package:library_guide/widgets/button/flatbuton.dart';
-import 'package:library_guide/widgets/logo.dart';
+import 'package:libraryguides/constant/styles.dart';
+import 'package:libraryguides/widgets/button/flatbuton.dart';
+import 'package:libraryguides/widgets/logo.dart';
+import 'edit_profile/edit_profile_button.dart';
+import 'edit_profile/view.dart';
 import 'user_item.dart';
 
 class ProfileScreen extends StatefulWidget {

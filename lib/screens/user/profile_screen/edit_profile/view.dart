@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:library_guide/constant/styles.dart';
-import 'package:library_guide/widgets/button/flatbuton.dart';
-import 'package:library_guide/widgets/input_field_regeist.dart';
+import 'package:libraryguides/constant/styles.dart';
+import 'package:libraryguides/widgets/button/flatbuton.dart';
+import 'package:libraryguides/widgets/input_field_regeist.dart';
 
 class EditProfile extends StatefulWidget {
   late final String password;
