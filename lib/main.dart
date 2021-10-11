@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:libraryguides/screens/registration/log_in_screen.dart';
 
 import 'screens/registration/sign_in_screen.dart';
 void main() async {
@@ -12,6 +13,23 @@ void main() async {
 }
 class MyApp extends StatelessWidget {
   final auth = FirebaseAuth.instance;
+
+  void submitAuth(
+      String email, String password,BuildContext context,) async {
+
+    try {
+      UserCredential userCredential = await auth.signInWithEmailAndPassword(
+          email: email,
+          password: password,
+      );
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'user-not-found') {
+        print('No user found for that email.');
+      } else if (e.code == 'wrong-password') {
+        print('Wrong password provided for that user.');
+      }
+    }
+  }
 
   void submit(
       String email, String password,BuildContext context, bool islogin) async {
@@ -36,7 +54,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SignInScreen(submit),
+      home: LogInScreen(submitAuth),
     );
   }
 }
